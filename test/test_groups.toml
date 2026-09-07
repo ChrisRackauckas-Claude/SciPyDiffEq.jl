@@ -1,11 +1,13 @@
 [Core]
 versions = ["lts", "1", "pre"]
 
+# PyCall/Conda has no usable i686 build on GHA; keep the lane for signal but non-blocking.
 ["Core 32-bit"]
 group = "Core"
 versions = ["1"]
 os = ["ubuntu-latest"]
 arch = "x86"
+continue_on_error = true
 
 [QA]
 versions = ["lts", "1"]
