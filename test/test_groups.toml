@@ -1,7 +1,5 @@
 [Core]
 versions = ["lts", "1", "pre"]
 
-# PyCall/Conda has no usable i686 build on GHA; keep the lane for signal but non-blocking.
-
 [QA]
 versions = ["lts", "1"]
